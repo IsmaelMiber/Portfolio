@@ -1,0 +1,119 @@
+<!DOCTYPE html>    <!-- This Document Type is "HTML" and it used to verifed it as HTML5 version -->
+<html>             <!-- html tag which contain all the elements of the document -->
+<head>             <!-- head tag which used to put meta tags and title and linked my css file -->
+    <meta charset="utf-8">    <!-- meta tag for unicode "utf-8" -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">  <!-- meta tag to show website in IE9 Mode in Internet Explorer  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- meta tag useful for website when rendered on mobile devices -->
+    <title>Front-End NINJA</title>  <!-- Title of the website which appears in the browser's tab-window -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400" rel="stylesheet"> <!-- Include Google Font -->
+    <link rel="stylesheet" href="css/normalize.min.css"> <!-- Normalize file to reset all element default value in ALL BROWSER -->
+    <link rel="stylesheet" href="css/main.min.css"> <!-- Include my stylesheet in my html document -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"> <!-- Include font-awesome library -->
+</head>
+<body>  <!-- body tag which contain all the content appears on the website when you open it -->
+   
+    <!-- Wrapper for wrap all image in fixed width but reponsively -->
+    <div class="wrapper"> 
+        <!-- Start of header -->
+        <header>
+                <div class="flex-box">
+
+                    <div class="logo">
+                        <a href="index.html"><img src="img/udacity.svg" alt="udacity logo"></a>
+                    </div>
+
+                    <div class="myName">
+                        <h1>ismael miber</h1>
+                        <h4>front-end ninja</h4>
+                    </div>
+
+                </div>
+        </header>
+        <!-- End of Header -->
+        
+            <hr>
+        
+        <!-- Start of the large-image section -->
+        <main class="large-image">
+            <picture>
+                <source media="(max-width:650px)" srcset="img/fights_crop.png">
+                <img src="img/fights.png" alt="front-end developer weapons html, css and javascript">
+            </picture>
+        </main>
+        <!-- End of the large-image section -->
+        
+        <!-- Start of paragraph -->
+  
+        <section class="text">
+            <h2>about me</h2>
+            <p>my name is <span>ismael miber</span> and i'm udacity's student of <span>full stack web developer nanodegree</span> and i'm deep love with cars, i'd to be a full stack web developer i love making the fron-end and back-end of websites, i in the <span>third year of my institute of computer science</span>.</p>
+        </section>    
+        
+        <section class="featured-work">
+            <div class="title">
+                <h2>Cars L<span class="heart">❤</span>ver</h2>
+            </div>
+            
+            <div class="gallery">
+                
+                <div class="image-info bmw">
+                    <img src="img/FHD.jpg"
+                         srcset="img/imgs_1600/FHD-1600_1600.jpg 1600w, img/imgs_800/FHD-800_800.jpg 800w, img/imgs_500/FHD-500_500.jpg 500w"
+                         sizes="(max-width: 800px) 100vw, (min-width: 801px) calc(50% - 5px)" alt="bmw m4 cs 2017"
+                         >
+                    <h3>bmw</h3>
+                    <a href="https://www.bmw.com/en/all-models/m-series/m4-coupe/2017/bmw-m4-cs.html">bmw m4 cs 2017</a>
+                </div>
+                
+               
+                <div class="image-info audi">
+                    <img src="img/audi.jpg" 
+                         srcset="img/imgs_1600/audi-1600_1600.jpg 1600w, img/imgs_800/audi-800_800.jpg 800w, img/imgs_500/audi-500_500.jpg 500w" 
+                         sizes="(max-width: 800px) 100vw, (min-width: 801px) calc(50% - 5px)" 
+                         alt="audi a7 2016"
+                         >
+                    <h3>audi</h3>
+                    <a href="#">audi a7 2016</a>
+                </div>
+                
+                <div class="image-info volvo">
+                    <img src="img/volvo.jpg"
+                         srcset="img/imgs_1600/volvo-1600_1600.jpg 1600w, img/imgs_800/volvo-800_800.jpg 800w, img/imgs_500/volvo-500_500.jpg 500w"
+                         sizes="(max-width: 800px) 100vw, (min-width: 801px) calc(50% - 5px)"
+                         alt="volvo xc60 2017"
+                         >
+                    <h3>volvo</h3>
+                    <a href="#">volvo xc60 2017</a>
+                </div>
+                
+                 <div class="image-info mcl">                    
+                    <img src="img/mcl.jpg"
+                         srcset="img/imgs_1600/mcl-1600_1600.jpg 1600w, img/imgs_800/mcl-800_800.jpg 800w, img/imgs_500/mcl-500_500.jpg 500w"
+                         sizes="(max-width: 800px) 100vw, (min-width: 801px) calc(50% - 5px)"
+                         alt="mclaren 720s 2017"
+                         >
+                     <h3>mcLaren</h3>
+                     <a href="#">mcLaren 720S 2017</a>
+                </div>
+            
+            </div>
+            
+        </section>
+        
+    </div>
+    <!-- End of Wrapper -->
+    
+    <!-- Start of footer -->
+    <footer>
+            <a href="https//www.fb.com/Ismael.Miber" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+            <a href="https//www.twitter.com/ismaelmiber" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+    </footer>
+    <!-- End of footer-->
+    
+</body>
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="picturefill.js" async></script>
+</html>

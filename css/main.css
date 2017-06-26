@@ -1,0 +1,182 @@
+body {
+    margin:0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* Container */
+.wrapper {
+    max-width: 960px;
+    margin: auto;
+}
+
+
+/* Flex-Box */
+.flex-box {
+    display:flex;
+    margin: 0 10px;
+}
+
+
+/* Header Section */
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    width: 4em;
+}
+
+.myName {
+    text-align: right;
+    flex: 2;
+}
+
+.myName h1, .myName h4 {
+    margin: 0;
+}
+
+.myName h1 {
+    text-transform: capitalize;
+    font-size: 34px;
+}
+
+.myName h4{
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid #02b3e4;
+}
+
+
+/* hr */
+
+hr {
+    border: 2px solid #7d97ad;
+    margin: 10px 0;
+}
+
+
+/* Text And Paragraph*/
+.text p {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.text span {
+    color: #02b3e4;
+}
+
+.text h2 {
+    text-transform: capitalize;
+}
+
+/* Large-Image */
+.large-image img {
+    max-width: 100%;
+}
+
+
+/* Featured-Work */
+.featured-work .title h2,
+.text h2  {
+    color: #02b3e4;
+    /*text-transform: capitalize;*/
+    letter-spacing: 1px;
+    font-size: calc((1.5 * 16px) + 3px);
+}
+
+.featured-work .title .heart {
+    color: #d60e40;
+    font-size: 20px;
+    margin-right: 2px;
+    
+}
+
+.featured-work .gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-work .image-info {
+    width: calc(50% - 5px);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.featured-work .image-info:nth-of-type(even) {
+    margin-right: 0;
+    
+}
+
+.featured-work .image-info img {
+    max-width: 100%;
+}
+
+.featured-work .image-info h3 {
+    margin: 8px 0;
+    color: #d60e40;
+}
+
+.featured-work .image-info a {
+    text-decoration: none;
+    color: #2d3c49;
+}
+
+.featured-work .bmw a:hover {
+    color: #4166fa;
+}
+
+.featured-work .audi a:hover {
+    color: darkgrey;
+}
+
+.featured-work .volvo a:hover {
+    color: #040404;
+}
+
+.featured-work .mcl a:hover {
+    color: #B11D3B;
+}
+
+
+/*This is MEDIA QUERY*/
+@media screen and (max-width:800px) {
+    
+    .featured-work .gallery .image-info {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 0.7em;
+}
+
+footer a {
+    color: #0c0c0c;
+    margin: 0 12px;
+    padding: 0.5em;
+    min-height: 48px;
+    min-width: 48px;
+}
+
+footer a:nth-of-type(1) {
+    color: #3b5998;
+}
+
+footer a:nth-of-type(2) {
+    color: #55acee;
+}
